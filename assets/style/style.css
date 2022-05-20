@@ -1,30 +1,32 @@
 *{
-padding: 0;
-margin: 0;
-color:#ffffff;
-font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  color:#ffffff;
+  font-family: 'Roboto', sans-serif;
 }
 
 .flex-container{
   display:flex;
   height: 100vh;
-  
 }
 .flex-container aside{
   background-color:#222e35 ;
   flex: 0 0 350px;
   border-right: 1px solid #ffffff26;
+  /* El overflow es la propiedad que te permite controlar el comportamiento cuando el contenido es más grande que el contenedor */
+  overflow-y: auto;
 }
 .flex-container section{
   background-color:#2a3942;
+  /* en flex el 1 es flex-grow  0 es flex-shrink auto flex-basis*/
   flex: 1 0 auto;
   display: flex;
   justify-content: center;
 }
 .avatar{
   border-radius: 50%;
-  width: 55px;
-  height: 55px;
+  width: 52px;
+  height: 52px;
 }
 .chat-header{
   display: flex;
